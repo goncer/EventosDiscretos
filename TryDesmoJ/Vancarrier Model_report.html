@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Tim Lechler">
+<meta name="GENERATOR" content="DESMO-J 2.5.1c">
+<title>./Vancarrier Model_report.html</title></head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<a name="top"></a><br />
+<p></p><h2><div align="center">Vancarrier Model Report</div></h2><p></p><div align="center"><h3>Model Vancarrier Model</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Description</div></b></td></tr>
+<tr valign="top"><td>This is the Vancarrier_1st_P_Model description,which means it is the first VanCarrier model in a process oriented version. This model is a service station model located at a container harbour. Conatinertrucks will arrive and require the loading of a container. A Vancarrier (VC) is on duty and will head off to find the required container in the storage. He will then deliver the container to the truck. The truck then leaves the area.In case the VC is busy, the truck waits for his turn on the parking-lot.If the VC is idle, it waits on his own parking spot for the truck to come.</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Simulation Run</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Property</div></b></td><td><b><div align="left">Content</div></b></td></tr>
+<tr valign="top"></tr>
+<tr valign="top"><td>Simulation duration</td><td>Experiment run from 0.0000 until 1500.0000.</td></tr>
+<tr valign="top"><td>Computation duration (HH:MM:SS)</td><td>00:00:00</td></tr>
+<tr valign="top"><td>Resets</td><td>No resets during the experiment run.</td></tr>
+<tr valign="top"><td>Seed</td><td>979</td></tr>
+<tr valign="top"><td>Errors</td><td>No errors or warnings have occurred.</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Histograms</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Mean</div></b></td><td><b><div align="left">Std.Dev</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Unit</div></b></td></tr>
+<tr valign="top"><td>Truck Wait Times</td><td>0.0000</td><td>555</td><td>0.00177</td><td>0.02174</td><td>0.0</td><td>0.33333</td><td>none</td></tr>
+</table><p></p>
+<div align="center"><h3> </h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Cell</div></b></td><td><b><div align="left">Cell Range</div></b></td><td><b><div align="left">n</div></b></td><td><b><div align="left">%</div></b></td><td><b><div align="left">Cum. %</div></b></td><td><b><div align="left">|</div></b></td><td><b><div align="left">Color</div></b></td></tr>
+<tr valign="top"><td>0</td><td>(-Infinity, 0.0)</td><td>0</td><td>0.0</td><td>0.0</td><td>|</td><td width="20" bgcolor="#000000"></td></tr>
+<tr valign="top"><td>1</td><td>[0.0, 1.6)</td><td>555</td><td>100.0</td><td>100.0</td><td>|</td><td width="20" bgcolor="#FF0000"></td></tr>
+<tr valign="top"><td>2</td><td>[1.6, 3.2)</td><td>0</td><td>0.0</td><td>100.0</td><td>|</td><td width="20" bgcolor="#0000FF"></td></tr>
+<tr valign="top"><td width="20" bgcolor="#FFFFFF"></td></tr>
+</table><p></p>
+<div align="center">
+<canvas id="histogramCanvas0" width="500" height="350">
+Your browser is not able to display this graphic.<br />
+This could be because it does not support the canvas-Element by html5<noscript> or because it does not support JavaScript</noscript>.
+</canvas>
+</div><p></p>
+<script type="text/javascript">
+<!--
+var myCanvas = document.getElementById('histogramCanvas0');
+var myContext = myCanvas.getContext('2d');
+
+myContext.strokeStyle = '#000000';
+drawXScale();
+drawYScale();
+drawXAxis();
+drawYAxis();
+drawVBars();
+drawTextLabels();
+
+myContext.strokeRect(0, 0, myCanvas.width, myCanvas.height);
+
+function drawXAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, myCanvas.height-50);
+	myContext.lineTo(myCanvas.width-20, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'bottom';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('Truck Wait Times', 270, 340);
+	myContext.restore();
+}
+
+function drawYAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, 20);
+	myContext.lineTo(60, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.translate(0, myCanvas.height);
+	myContext.rotate(toRad(270));
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('n', 190, 10);
+	myContext.restore();
+}
+
+function drawYScale() {
+	var yScale = 100;
+	var numOfYScale = 6;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=1; numOfYScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(0-5), yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.lineTo(xToCanvasCoordinate(chartWidth),  yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'right';
+	myContext.textBaseline = 'middle';
+	for (var i=0; numOfYScale>=i; i++) {
+		var scaleText = i*yScale;
+		myContext.fillText(scaleText, 50, yToCanvasCoordinate(i*chartHeight/numOfYScale));
+	}
+	myContext.restore();
+}
+
+function drawTextLabels() {
+	var labels = ['< 0.0', '\u2265 0.0', '\u2265 1.6'];
+	var numOfData = 3;
+	var barWidth = 4/5*420 /numOfData;
+	var barGap = 1/5*420/(numOfData+1);
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	for (var i=0; numOfData>i; i++) {
+		var horTextPos = (i+1)*barGap + (i+0.5)*barWidth + 60;
+		myContext.fillText(labels[i], horTextPos, 310, barWidth);
+	}
+	myContext.restore();
+}
+
+function drawVBars() {
+	var dataValues = [0, 555, 0];
+	var colors = ['#000000', '#FF0000', '#0000FF'];
+	var yScale = 100;
+	var numOfYScale = 6;
+	var chartHeight = 280;
+	var chartWidth = 420;
+	var xScale = 0;
+	var numOfXScale = 0;
+	var startXScale = 0;
+	var barWidth = 4/5*420 /dataValues.length;
+	var barGap = 1/5*420/(dataValues.length+1);
+
+	myContext.save();
+	for (var i=0; dataValues.length>i; i++) {
+		var startX = (i+1)*barGap + i*barWidth;
+		var barHeight = dataValues[i]/(yScale*numOfYScale) * chartHeight;
+		myContext.fillStyle = colors[i];
+		myContext.fillRect(xToCanvasCoordinate(startX), yToCanvasCoordinate(0), barWidth, 0-barHeight);
+	}
+	myContext.restore();
+}
+
+function drawXScale() {
+}
+
+function xToCanvasCoordinate(xCoordinate) {
+	return 60 + xCoordinate;
+}
+
+function yToCanvasCoordinate(yCoordinate) {
+	return myCanvas.height-50 - yCoordinate;
+}
+
+function toRad(x) {
+	return (x*Math.PI)/180;
+};
+//-->
+</script>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>TimeSeries</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Start</div></b></td><td><b><div align="left">End</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">First</div></b></td><td><b><div align="left">Last</div></b></td><td><b><div align="left">Min</div></b></td><td><b><div align="left">Max</div></b></td><td><b><div align="left">Group</div></b></td><td><b><div align="left">Color</div></b></td></tr>
+<tr valign="top"><td>arrived</td><td>0.0000</td><td>0.0</td><td>1500.0</td><td>555</td><td>1.0</td><td>555.0</td><td>1.0</td><td>555.0</td><td>default</td><td width="20" bgcolor="#000000"></td></tr>
+<tr valign="top"><td>finished</td><td>0.0000</td><td>0.0</td><td>1500.0</td><td>555</td><td>1.0</td><td>555.0</td><td>1.0</td><td>555.0</td><td>default</td><td width="20" bgcolor="#FF0000"></td></tr>
+</table><p></p>
+<div align="center">
+<canvas id="timeSeriesCanvas1" width="500" height="350">
+Your browser is not able to display this graphic.<br />
+This could be because it does not support the canvas-Element by html5<noscript> or because it does not support JavaScript</noscript>.
+</canvas>
+</div><p></p>
+<script type="text/javascript">
+<!--
+var myCanvas = document.getElementById('timeSeriesCanvas1');
+var myContext = myCanvas.getContext('2d');
+
+myContext.strokeStyle = '#000000';
+drawXScale();
+drawYScale();
+drawXAxis();
+drawYAxis();
+drawTimeSeries();
+
+myContext.strokeRect(0, 0, myCanvas.width, myCanvas.height);
+
+function drawXAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, myCanvas.height-50);
+	myContext.lineTo(myCanvas.width-20, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'bottom';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('time', 270, 340);
+	myContext.restore();
+}
+
+function drawYAxis() {
+	myContext.beginPath();
+	myContext.moveTo(60, 20);
+	myContext.lineTo(60, myCanvas.height-50);
+	myContext.stroke();
+	myContext.closePath();
+
+	myContext.save();
+	myContext.translate(0, myCanvas.height);
+	myContext.rotate(toRad(270));
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	myContext.font = 'bold 8pt Georgia';
+	myContext.fillText('value', 190, 10);
+	myContext.restore();
+}
+
+function drawYScale() {
+	var yScale = 100.0;
+	var numOfYScale = 6;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=1; numOfYScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(0-5), yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.lineTo(xToCanvasCoordinate(chartWidth),  yToCanvasCoordinate(i*chartHeight/numOfYScale));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'right';
+	myContext.textBaseline = 'middle';
+	for (var i=0; numOfYScale>=i; i++) {
+		var scaleText = i*yScale;
+		myContext.fillText(scaleText, 50, yToCanvasCoordinate(i*chartHeight/numOfYScale));
+	}
+	myContext.restore();
+}
+
+function drawTimeSeries() {
+	var dataValues = [[1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0, 101.0, 102.0, 103.0, 104.0, 105.0, 106.0, 107.0, 108.0, 109.0, 110.0, 111.0, 112.0, 113.0, 114.0, 115.0, 116.0, 117.0, 118.0, 119.0, 120.0, 121.0, 122.0, 123.0, 124.0, 125.0, 126.0, 127.0, 128.0, 129.0, 130.0, 131.0, 132.0, 133.0, 134.0, 135.0, 136.0, 137.0, 138.0, 139.0, 140.0, 141.0, 142.0, 143.0, 144.0, 145.0, 146.0, 147.0, 148.0, 149.0, 150.0, 151.0, 152.0, 153.0, 154.0, 155.0, 156.0, 157.0, 158.0, 159.0, 160.0, 161.0, 162.0, 163.0, 164.0, 165.0, 166.0, 167.0, 168.0, 169.0, 170.0, 171.0, 172.0, 173.0, 174.0, 175.0, 176.0, 177.0, 178.0, 179.0, 180.0, 181.0, 182.0, 183.0, 184.0, 185.0, 186.0, 187.0, 188.0, 189.0, 190.0, 191.0, 192.0, 193.0, 194.0, 195.0, 196.0, 197.0, 198.0, 199.0, 200.0, 201.0, 202.0, 203.0, 204.0, 205.0, 206.0, 207.0, 208.0, 209.0, 210.0, 211.0, 212.0, 213.0, 214.0, 215.0, 216.0, 217.0, 218.0, 219.0, 220.0, 221.0, 222.0, 223.0, 224.0, 225.0, 226.0, 227.0, 228.0, 229.0, 230.0, 231.0, 232.0, 233.0, 234.0, 235.0, 236.0, 237.0, 238.0, 239.0, 240.0, 241.0, 242.0, 243.0, 244.0, 245.0, 246.0, 247.0, 248.0, 249.0, 250.0, 251.0, 252.0, 253.0, 254.0, 255.0, 256.0, 257.0, 258.0, 259.0, 260.0, 261.0, 262.0, 263.0, 264.0, 265.0, 266.0, 267.0, 268.0, 269.0, 270.0, 271.0, 272.0, 273.0, 274.0, 275.0, 276.0, 277.0, 278.0, 279.0, 280.0, 281.0, 282.0, 283.0, 284.0, 285.0, 286.0, 287.0, 288.0, 289.0, 290.0, 291.0, 292.0, 293.0, 294.0, 295.0, 296.0, 297.0, 298.0, 299.0, 300.0, 301.0, 302.0, 303.0, 304.0, 305.0, 306.0, 307.0, 308.0, 309.0, 310.0, 311.0, 312.0, 313.0, 314.0, 315.0, 316.0, 317.0, 318.0, 319.0, 320.0, 321.0, 322.0, 323.0, 324.0, 325.0, 326.0, 327.0, 328.0, 329.0, 330.0, 331.0, 332.0, 333.0, 334.0, 335.0, 336.0, 337.0, 338.0, 339.0, 340.0, 341.0, 342.0, 343.0, 344.0, 345.0, 346.0, 347.0, 348.0, 349.0, 350.0, 351.0, 352.0, 353.0, 354.0, 355.0, 356.0, 357.0, 358.0, 359.0, 360.0, 361.0, 362.0, 363.0, 364.0, 365.0, 366.0, 367.0, 368.0, 369.0, 370.0, 371.0, 372.0, 373.0, 374.0, 375.0, 376.0, 377.0, 378.0, 379.0, 380.0, 381.0, 382.0, 383.0, 384.0, 385.0, 386.0, 387.0, 388.0, 389.0, 390.0, 391.0, 392.0, 393.0, 394.0, 395.0, 396.0, 397.0, 398.0, 399.0, 400.0, 401.0, 402.0, 403.0, 404.0, 405.0, 406.0, 407.0, 408.0, 409.0, 410.0, 411.0, 412.0, 413.0, 414.0, 415.0, 416.0, 417.0, 418.0, 419.0, 420.0, 421.0, 422.0, 423.0, 424.0, 425.0, 426.0, 427.0, 428.0, 429.0, 430.0, 431.0, 432.0, 433.0, 434.0, 435.0, 436.0, 437.0, 438.0, 439.0, 440.0, 441.0, 442.0, 443.0, 444.0, 445.0, 446.0, 447.0, 448.0, 449.0, 450.0, 451.0, 452.0, 453.0, 454.0, 455.0, 456.0, 457.0, 458.0, 459.0, 460.0, 461.0, 462.0, 463.0, 464.0, 465.0, 466.0, 467.0, 468.0, 469.0, 470.0, 471.0, 472.0, 473.0, 474.0, 475.0, 476.0, 477.0, 478.0, 479.0, 480.0, 481.0, 482.0, 483.0, 484.0, 485.0, 486.0, 487.0, 488.0, 489.0, 490.0, 491.0, 492.0, 493.0, 494.0, 495.0, 496.0, 497.0, 498.0, 499.0, 500.0, 501.0, 502.0, 503.0, 504.0, 505.0, 506.0, 507.0, 508.0, 509.0, 510.0, 511.0, 512.0, 513.0, 514.0, 515.0, 516.0, 517.0, 518.0, 519.0, 520.0, 521.0, 522.0, 523.0, 524.0, 525.0, 526.0, 527.0, 528.0, 529.0, 530.0, 531.0, 532.0, 533.0, 534.0, 535.0, 536.0, 537.0, 538.0, 539.0, 540.0, 541.0, 542.0, 543.0, 544.0, 545.0, 546.0, 547.0, 548.0, 549.0, 550.0, 551.0, 552.0, 553.0, 554.0, 555.0], [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0, 100.0, 101.0, 102.0, 103.0, 104.0, 105.0, 106.0, 107.0, 108.0, 109.0, 110.0, 111.0, 112.0, 113.0, 114.0, 115.0, 116.0, 117.0, 118.0, 119.0, 120.0, 121.0, 122.0, 123.0, 124.0, 125.0, 126.0, 127.0, 128.0, 129.0, 130.0, 131.0, 132.0, 133.0, 134.0, 135.0, 136.0, 137.0, 138.0, 139.0, 140.0, 141.0, 142.0, 143.0, 144.0, 145.0, 146.0, 147.0, 148.0, 149.0, 150.0, 151.0, 152.0, 153.0, 154.0, 155.0, 156.0, 157.0, 158.0, 159.0, 160.0, 161.0, 162.0, 163.0, 164.0, 165.0, 166.0, 167.0, 168.0, 169.0, 170.0, 171.0, 172.0, 173.0, 174.0, 175.0, 176.0, 177.0, 178.0, 179.0, 180.0, 181.0, 182.0, 183.0, 184.0, 185.0, 186.0, 187.0, 188.0, 189.0, 190.0, 191.0, 192.0, 193.0, 194.0, 195.0, 196.0, 197.0, 198.0, 199.0, 200.0, 201.0, 202.0, 203.0, 204.0, 205.0, 206.0, 207.0, 208.0, 209.0, 210.0, 211.0, 212.0, 213.0, 214.0, 215.0, 216.0, 217.0, 218.0, 219.0, 220.0, 221.0, 222.0, 223.0, 224.0, 225.0, 226.0, 227.0, 228.0, 229.0, 230.0, 231.0, 232.0, 233.0, 234.0, 235.0, 236.0, 237.0, 238.0, 239.0, 240.0, 241.0, 242.0, 243.0, 244.0, 245.0, 246.0, 247.0, 248.0, 249.0, 250.0, 251.0, 252.0, 253.0, 254.0, 255.0, 256.0, 257.0, 258.0, 259.0, 260.0, 261.0, 262.0, 263.0, 264.0, 265.0, 266.0, 267.0, 268.0, 269.0, 270.0, 271.0, 272.0, 273.0, 274.0, 275.0, 276.0, 277.0, 278.0, 279.0, 280.0, 281.0, 282.0, 283.0, 284.0, 285.0, 286.0, 287.0, 288.0, 289.0, 290.0, 291.0, 292.0, 293.0, 294.0, 295.0, 296.0, 297.0, 298.0, 299.0, 300.0, 301.0, 302.0, 303.0, 304.0, 305.0, 306.0, 307.0, 308.0, 309.0, 310.0, 311.0, 312.0, 313.0, 314.0, 315.0, 316.0, 317.0, 318.0, 319.0, 320.0, 321.0, 322.0, 323.0, 324.0, 325.0, 326.0, 327.0, 328.0, 329.0, 330.0, 331.0, 332.0, 333.0, 334.0, 335.0, 336.0, 337.0, 338.0, 339.0, 340.0, 341.0, 342.0, 343.0, 344.0, 345.0, 346.0, 347.0, 348.0, 349.0, 350.0, 351.0, 352.0, 353.0, 354.0, 355.0, 356.0, 357.0, 358.0, 359.0, 360.0, 361.0, 362.0, 363.0, 364.0, 365.0, 366.0, 367.0, 368.0, 369.0, 370.0, 371.0, 372.0, 373.0, 374.0, 375.0, 376.0, 377.0, 378.0, 379.0, 380.0, 381.0, 382.0, 383.0, 384.0, 385.0, 386.0, 387.0, 388.0, 389.0, 390.0, 391.0, 392.0, 393.0, 394.0, 395.0, 396.0, 397.0, 398.0, 399.0, 400.0, 401.0, 402.0, 403.0, 404.0, 405.0, 406.0, 407.0, 408.0, 409.0, 410.0, 411.0, 412.0, 413.0, 414.0, 415.0, 416.0, 417.0, 418.0, 419.0, 420.0, 421.0, 422.0, 423.0, 424.0, 425.0, 426.0, 427.0, 428.0, 429.0, 430.0, 431.0, 432.0, 433.0, 434.0, 435.0, 436.0, 437.0, 438.0, 439.0, 440.0, 441.0, 442.0, 443.0, 444.0, 445.0, 446.0, 447.0, 448.0, 449.0, 450.0, 451.0, 452.0, 453.0, 454.0, 455.0, 456.0, 457.0, 458.0, 459.0, 460.0, 461.0, 462.0, 463.0, 464.0, 465.0, 466.0, 467.0, 468.0, 469.0, 470.0, 471.0, 472.0, 473.0, 474.0, 475.0, 476.0, 477.0, 478.0, 479.0, 480.0, 481.0, 482.0, 483.0, 484.0, 485.0, 486.0, 487.0, 488.0, 489.0, 490.0, 491.0, 492.0, 493.0, 494.0, 495.0, 496.0, 497.0, 498.0, 499.0, 500.0, 501.0, 502.0, 503.0, 504.0, 505.0, 506.0, 507.0, 508.0, 509.0, 510.0, 511.0, 512.0, 513.0, 514.0, 515.0, 516.0, 517.0, 518.0, 519.0, 520.0, 521.0, 522.0, 523.0, 524.0, 525.0, 526.0, 527.0, 528.0, 529.0, 530.0, 531.0, 532.0, 533.0, 534.0, 535.0, 536.0, 537.0, 538.0, 539.0, 540.0, 541.0, 542.0, 543.0, 544.0, 545.0, 546.0, 547.0, 548.0, 549.0, 550.0, 551.0, 552.0, 553.0, 554.0, 555.0]];
+	var timeValues = [[3.88333, 14.25, 14.96667, 16.13333, 27.31667, 29.45, 31.05, 33.3, 40.85, 41.8, 48.25, 53.53333, 56.93333, 61.13333, 61.75, 62.71667, 67.11667, 68.48333, 68.55, 69.43333, 69.58333, 70.43333, 71.38333, 71.88333, 81.95, 82.6, 84.95, 91.76667, 95.58333, 98.46667, 98.61667, 99.71667, 119.91667, 119.98333, 120.31667, 122.76667, 125.56667, 126.5, 128.6, 129.8, 130.06667, 134.01667, 134.08333, 139.38333, 145.03333, 145.91667, 146.21667, 147.96667, 150.93333, 151.01667, 152.05, 153.61667, 155.11667, 156.63333, 160.48333, 164.11667, 167.31667, 176.98333, 182.75, 183.5, 184.01667, 186.21667, 187.13333, 188.26667, 190.81667, 199.98333, 200.08333, 203.31667, 204.4, 205.51667, 205.81667, 211.43333, 211.7, 213.13333, 218.75, 218.95, 219.03333, 219.75, 221.88333, 226.16667, 226.56667, 227.5, 229.63333, 231.45, 240.68333, 241.91667, 248.9, 251.86667, 252.41667, 255.53333, 257.23333, 265.56667, 280.4, 281.5, 282.4, 292.75, 293.76667, 297.71667, 299.98333, 301.56667, 302.46667, 304.58333, 305.36667, 307.41667, 311.91667, 318.41667, 320.73333, 322.88333, 324.53333, 325.08333, 330.0, 331.06667, 331.85, 332.0, 336.68333, 341.86667, 344.4, 345.43333, 347.16667, 347.8, 349.51667, 349.9, 352.31667, 358.58333, 360.4, 361.21667, 361.65, 362.58333, 364.03333, 365.73333, 373.45, 375.15, 379.36667, 382.25, 386.63333, 388.1, 389.28333, 390.48333, 396.51667, 396.83333, 399.95, 403.68333, 407.65, 408.25, 411.63333, 413.7, 420.31667, 421.06667, 426.7, 429.36667, 432.7, 436.51667, 436.96667, 439.4, 441.31667, 444.41667, 453.35, 456.8, 461.98333, 473.15, 474.71667, 474.76667, 475.38333, 479.75, 483.13333, 484.81667, 486.06667, 490.33333, 491.48333, 494.91667, 495.5, 495.53333, 497.06667, 498.06667, 500.4, 503.83333, 504.7, 504.83333, 506.35, 509.15, 509.21667, 509.81667, 518.33333, 519.83333, 520.55, 521.5, 526.83333, 527.71667, 528.03333, 529.1, 531.8, 532.1, 538.91667, 544.93333, 547.16667, 547.81667, 552.41667, 555.35, 555.41667, 555.83333, 558.55, 558.61667, 559.23333, 562.8, 571.65, 575.83333, 581.15, 581.43333, 586.86667, 588.08333, 591.76667, 597.83333, 600.81667, 607.63333, 610.95, 615.91667, 616.13333, 617.38333, 622.26667, 624.46667, 627.26667, 640.26667, 641.28333, 641.65, 646.18333, 646.35, 649.98333, 651.23333, 654.98333, 656.55, 661.16667, 662.01667, 668.28333, 670.38333, 672.55, 675.36667, 676.4, 680.2, 680.8, 682.03333, 682.71667, 689.56667, 693.51667, 694.56667, 700.25, 701.86667, 702.35, 703.33333, 705.85, 714.05, 714.06667, 714.7, 719.13333, 721.66667, 722.86667, 735.4, 737.81667, 739.38333, 739.81667, 741.7, 745.7, 752.4, 755.45, 759.61667, 759.91667, 760.18333, 768.41667, 772.88333, 773.33333, 776.01667, 778.35, 779.55, 781.98333, 784.31667, 785.65, 790.38333, 793.71667, 793.9, 794.28333, 800.7, 804.86667, 806.48333, 806.93333, 813.03333, 819.1, 819.93333, 821.73333, 827.65, 828.3, 829.23333, 833.38333, 833.68333, 834.66667, 835.43333, 838.21667, 840.96667, 843.18333, 860.28333, 861.95, 862.0, 864.66667, 866.18333, 867.28333, 867.58333, 872.61667, 874.85, 878.3, 883.48333, 887.91667, 888.88333, 889.03333, 889.88333, 891.05, 891.66667, 893.23333, 896.15, 896.75, 901.06667, 901.71667, 904.41667, 909.86667, 909.96667, 912.26667, 913.36667, 913.95, 915.8, 917.23333, 918.08333, 920.91667, 930.85, 939.45, 939.48333, 942.1, 943.38333, 944.15, 947.03333, 950.31667, 952.15, 960.96667, 961.31667, 961.78333, 968.15, 968.86667, 969.28333, 975.83333, 976.86667, 979.91667, 981.45, 987.38333, 988.76667, 989.31667, 999.41667, 999.98333, 1001.73333, 1009.38333, 1015.05, 1018.55, 1019.18333, 1023.58333, 1026.06667, 1028.8, 1029.38333, 1037.31667, 1037.38333, 1037.68333, 1038.18333, 1038.21667, 1040.1, 1041.41667, 1052.11667, 1053.03333, 1053.4, 1055.48333, 1055.73333, 1057.76667, 1061.31667, 1068.48333, 1072.65, 1073.38333, 1073.95, 1075.8, 1077.91667, 1077.98333, 1081.3, 1084.25, 1087.1, 1092.5, 1100.68333, 1101.53333, 1109.55, 1115.75, 1117.9, 1123.93333, 1123.96667, 1126.78333, 1128.51667, 1128.85, 1129.11667, 1132.75, 1133.25, 1134.01667, 1134.35, 1134.66667, 1135.41667, 1136.86667, 1137.63333, 1146.35, 1148.78333, 1150.61667, 1153.9, 1157.65, 1162.71667, 1163.73333, 1164.55, 1165.28333, 1165.45, 1166.43333, 1171.48333, 1173.93333, 1179.73333, 1192.11667, 1192.88333, 1192.93333, 1195.51667, 1195.65, 1197.85, 1197.88333, 1198.0, 1198.95, 1203.96667, 1208.6, 1209.41667, 1209.43333, 1211.51667, 1213.31667, 1216.98333, 1217.2, 1218.26667, 1218.53333, 1221.33333, 1224.8, 1225.0, 1226.08333, 1230.4, 1232.3, 1234.13333, 1236.18333, 1239.1, 1241.35, 1241.38333, 1242.5, 1243.53333, 1255.85, 1258.28333, 1260.01667, 1268.38333, 1274.28333, 1277.08333, 1281.1, 1281.11667, 1282.56667, 1290.35, 1290.6, 1291.28333, 1297.21667, 1298.16667, 1303.71667, 1305.38333, 1306.08333, 1306.63333, 1318.05, 1320.38333, 1320.53333, 1322.65, 1329.65, 1331.18333, 1335.58333, 1340.51667, 1340.96667, 1341.76667, 1343.85, 1344.35, 1347.08333, 1348.66667, 1349.7, 1358.36667, 1362.13333, 1363.58333, 1367.75, 1367.9, 1369.96667, 1373.73333, 1376.31667, 1377.35, 1378.56667, 1378.73333, 1379.31667, 1382.9, 1382.95, 1384.0, 1384.63333, 1387.45, 1387.46667, 1388.01667, 1389.11667, 1390.7, 1390.93333, 1391.6, 1392.13333, 1393.58333, 1404.88333, 1405.3, 1406.08333, 1406.71667, 1407.68333, 1411.03333, 1414.53333, 1415.78333, 1424.4, 1424.41667, 1425.11667, 1425.8, 1427.21667, 1427.95, 1428.83333, 1429.15, 1432.06667, 1435.7, 1436.06667, 1438.85, 1440.51667, 1442.51667, 1443.56667, 1443.66667, 1445.55, 1447.41667, 1448.15, 1448.7, 1452.3, 1455.26667, 1455.83333, 1456.41667, 1456.7, 1459.9, 1462.4, 1468.65, 1470.26667, 1472.0, 1472.58333, 1476.91667, 1480.33333, 1483.1, 1490.03333, 1491.83333, 1498.15], [5.45, 14.31667, 15.21667, 16.23333, 29.4, 29.78333, 31.13333, 33.73333, 41.31667, 42.3, 49.48333, 53.78333, 57.36667, 61.2, 62.78333, 64.86667, 67.11667, 68.58333, 68.6, 69.5, 69.65, 71.1, 71.9, 72.08333, 82.33333, 82.6, 85.38333, 91.88333, 96.06667, 98.48333, 98.65, 100.85, 119.98333, 120.53333, 120.86667, 123.2, 126.03333, 127.85, 129.43333, 130.23333, 130.56667, 134.15, 134.6, 139.56667, 145.05, 145.95, 146.33333, 149.1, 151.16667, 151.91667, 152.2, 153.71667, 155.21667, 157.75, 161.46667, 164.86667, 167.85, 177.33333, 182.8, 184.93333, 186.01667, 186.53333, 187.33333, 188.41667, 191.8, 200.13333, 200.33333, 203.85, 204.83333, 205.95, 206.96667, 211.76667, 213.28333, 213.53333, 218.81667, 219.9, 219.91667, 220.81667, 222.68333, 226.16667, 227.66667, 228.88333, 231.43333, 232.36667, 241.26667, 241.98333, 250.5, 252.18333, 252.91667, 255.61667, 257.55, 265.63333, 280.56667, 282.28333, 282.45, 293.26667, 295.4, 298.33333, 300.13333, 301.75, 303.01667, 305.18333, 305.81667, 307.96667, 313.1, 318.53333, 321.08333, 322.93333, 325.33333, 325.45, 330.36667, 331.5, 331.98333, 332.56667, 336.78333, 342.31667, 344.48333, 348.1, 348.48333, 348.58333, 350.06667, 351.76667, 352.9, 358.81667, 360.4, 361.58333, 362.31667, 362.65, 364.28333, 367.11667, 373.81667, 375.9, 379.56667, 382.7, 386.7, 388.76667, 389.41667, 392.23333, 397.16667, 398.56667, 400.65, 403.68333, 407.9, 408.25, 412.51667, 413.81667, 421.95, 422.58333, 426.81667, 430.6, 433.18333, 436.81667, 438.36667, 440.08333, 441.5, 445.03333, 453.38333, 457.95, 462.56667, 474.16667, 474.86667, 475.46667, 475.7, 479.95, 483.98333, 486.38333, 487.53333, 490.5, 491.48333, 495.15, 495.63333, 496.18333, 497.75, 498.1, 500.88333, 503.88333, 505.33333, 505.38333, 506.51667, 509.4, 510.2, 511.03333, 518.88333, 521.08333, 521.55, 521.61667, 527.2, 527.88333, 528.65, 529.2, 532.38333, 532.65, 538.95, 544.93333, 547.91667, 548.75, 552.53333, 555.38333, 555.91667, 555.93333, 558.73333, 559.55, 560.15, 563.45, 571.76667, 575.83333, 581.58333, 583.31667, 586.88333, 588.25, 592.26667, 599.33333, 601.68333, 607.65, 611.21667, 616.2, 616.43333, 617.63333, 624.48333, 624.81667, 628.13333, 641.55, 641.9, 641.96667, 646.18333, 646.7, 650.5, 651.25, 655.05, 656.73333, 662.03333, 662.55, 670.16667, 670.81667, 674.05, 675.6, 677.68333, 680.46667, 680.95, 682.16667, 682.85, 689.56667, 693.85, 695.33333, 700.46667, 702.31667, 703.36667, 704.93333, 706.9, 714.35, 714.43333, 714.75, 719.35, 722.15, 723.33333, 735.7, 738.31667, 740.15, 740.16667, 742.06667, 745.71667, 752.41667, 755.66667, 759.71667, 759.93333, 761.13333, 768.66667, 773.68333, 774.25, 776.36667, 778.51667, 780.15, 782.53333, 784.76667, 785.98333, 790.4, 793.9, 793.98333, 794.98333, 801.15, 805.03333, 807.18333, 809.58333, 813.6, 819.28333, 820.33333, 822.2, 827.68333, 828.68333, 830.06667, 833.41667, 834.05, 835.15, 836.1, 838.3, 841.06667, 843.2, 860.48333, 862.18333, 863.03333, 866.33333, 867.78333, 867.85, 868.08333, 872.8, 875.05, 878.41667, 883.73333, 887.93333, 889.3, 889.51667, 890.18333, 892.08333, 892.1, 893.36667, 896.18333, 897.03333, 901.1, 902.0, 904.86667, 910.03333, 910.06667, 912.41667, 913.65, 914.43333, 915.85, 917.43333, 918.23333, 921.1, 931.45, 939.56667, 940.13333, 942.68333, 944.13333, 944.48333, 947.53333, 950.83333, 953.6, 960.96667, 961.71667, 961.86667, 969.15, 969.25, 969.5, 975.9, 977.25, 979.98333, 981.55, 988.11667, 989.45, 989.46667, 999.91667, 1000.61667, 1001.98333, 1009.6, 1015.1, 1019.0, 1020.41667, 1023.61667, 1026.25, 1029.41667, 1030.21667, 1037.5, 1037.96667, 1038.55, 1038.86667, 1038.96667, 1040.33333, 1041.45, 1052.48333, 1053.13333, 1054.06667, 1055.85, 1057.65, 1058.2, 1061.76667, 1068.61667, 1073.66667, 1073.76667, 1074.83333, 1077.06667, 1078.01667, 1078.21667, 1081.45, 1084.46667, 1087.5, 1092.98333, 1101.45, 1101.71667, 1109.91667, 1116.2, 1118.26667, 1123.96667, 1124.71667, 1127.48333, 1128.9, 1130.13333, 1130.33333, 1132.8, 1133.55, 1134.1, 1134.38333, 1134.91667, 1135.51667, 1137.48333, 1137.86667, 1146.38333, 1148.83333, 1150.91667, 1154.38333, 1158.01667, 1163.65, 1163.76667, 1165.26667, 1165.45, 1165.86667, 1166.71667, 1172.2, 1175.2, 1181.73333, 1192.11667, 1193.01667, 1194.0, 1195.81667, 1196.45, 1197.9, 1198.11667, 1198.13333, 1199.1, 1205.3, 1208.9, 1209.75, 1209.88333, 1213.08333, 1213.5, 1217.15, 1217.63333, 1218.9, 1219.08333, 1221.63333, 1224.95, 1225.86667, 1226.48333, 1231.66667, 1232.88333, 1235.26667, 1237.06667, 1239.36667, 1241.4, 1241.5, 1244.76667, 1244.91667, 1255.98333, 1258.5, 1261.03333, 1268.66667, 1274.28333, 1277.4, 1281.26667, 1281.46667, 1283.93333, 1290.98333, 1291.21667, 1291.33333, 1298.96667, 1299.01667, 1304.0, 1305.66667, 1306.6, 1306.7, 1319.46667, 1320.76667, 1320.91667, 1322.73333, 1329.78333, 1331.26667, 1335.66667, 1340.66667, 1341.01667, 1342.2, 1344.2, 1344.8, 1347.36667, 1349.51667, 1350.33333, 1359.75, 1362.71667, 1364.26667, 1368.78333, 1369.06667, 1370.86667, 1373.85, 1377.5, 1377.51667, 1378.88333, 1379.3, 1379.41667, 1383.25, 1383.26667, 1384.56667, 1384.7, 1387.46667, 1387.81667, 1388.41667, 1389.28333, 1390.93333, 1391.15, 1391.9, 1393.15, 1394.08333, 1405.0, 1405.45, 1406.6, 1406.83333, 1408.06667, 1412.41667, 1415.06667, 1416.08333, 1424.63333, 1424.75, 1425.4, 1426.06667, 1428.06667, 1428.08333, 1428.88333, 1429.3, 1433.1, 1436.58333, 1436.76667, 1439.98333, 1440.73333, 1442.6, 1444.01667, 1444.3, 1446.18333, 1447.48333, 1448.88333, 1449.18333, 1452.5, 1455.63333, 1456.06667, 1456.73333, 1457.16667, 1460.86667, 1464.91667, 1468.65, 1470.95, 1472.18333, 1474.68333, 1476.95, 1480.38333, 1483.6, 1490.15, 1492.5, 1498.5]];
+	var colors = ['#000000', '#FF0000'];
+	var startXScale = 0.0;
+	var xScale = 150.0;
+	var numOfXScale = 10;
+	var yScale = 100.0;
+	var numOfYScale = 6;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	for (var i=0; dataValues.length>i; i++) {
+		var data = dataValues[i];
+		var time = timeValues[i]
+		var xCoor = (time[0]-startXScale) * chartWidth/(xScale*numOfXScale);
+		var yCoor = data[0] * chartHeight/(yScale*numOfYScale);
+
+		myContext.strokeStyle = colors[i];
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(xCoor), yToCanvasCoordinate(yCoor));
+		for (var j=1; data.length>j; j++) {
+			var newXCoor = (time[j] - startXScale) * chartWidth/(xScale*numOfXScale);
+			var newYCoor = data[j] * chartHeight/(yScale*numOfYScale);
+			myContext.lineTo(xToCanvasCoordinate(newXCoor), yToCanvasCoordinate(yCoor));
+			myContext.lineTo(xToCanvasCoordinate(newXCoor), yToCanvasCoordinate(newYCoor));
+			xCoor = newXCoor;
+			yCoor = newYCoor;
+		}
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+}
+
+function drawXScale() {
+	var startXScale = 0.0;
+	var xScale = 150.0;
+	var numOfXScale = 10;
+	var chartHeight = 280;
+	var chartWidth = 420;
+
+	myContext.save();
+	myContext.strokeStyle = '#bebebe';
+	for (var i=0; numOfXScale>=i; i++) {
+		myContext.beginPath();
+		myContext.moveTo(xToCanvasCoordinate(i*chartWidth/numOfXScale), yToCanvasCoordinate(0-5));
+		myContext.lineTo(xToCanvasCoordinate(i*chartWidth/numOfXScale),  yToCanvasCoordinate(chartHeight));
+		myContext.stroke();
+		myContext.closePath();
+	}
+	myContext.restore();
+
+	myContext.save();
+	myContext.textAlign = 'center';
+	myContext.textBaseline = 'top';
+	for (var i=0; numOfXScale>=i; i++) {
+		var scaleText = i*xScale + startXScale;
+		myContext.fillText(scaleText, xToCanvasCoordinate(i*chartWidth/numOfXScale), 310);
+	}
+	myContext.restore();
+}
+
+function xToCanvasCoordinate(xCoordinate) {
+	return 60 + xCoordinate;
+}
+
+function yToCanvasCoordinate(yCoordinate) {
+	return myCanvas.height-50 - yCoordinate;
+}
+
+function toRad(x) {
+	return (x*Math.PI)/180;
+};
+//-->
+</script>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Queues</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">Qorder</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">QLimit</div></b></td><td><b><div align="left">Qmax</div></b></td><td><b><div align="left">Qnow</div></b></td><td><b><div align="left">Qavg.</div></b></td><td><b><div align="left">Zeros</div></b></td><td><b><div align="left">max.Wait</div></b></td><td><b><div align="left">avg.Wait</div></b></td><td><b><div align="left">refus.</div></b></td></tr>
+<tr valign="top"><td>Truck Queue</td><td>FIFO</td><td>0.0000</td><td>555</td><td>unlimit.</td><td>1</td><td>0</td><td>6.6E-4</td><td>551</td><td>0.3333</td><td>0.0000</td><td>0</td></tr>
+<tr valign="top"><td>idle VC Queue</td><td>FIFO</td><td>0.0000</td><td>551</td><td>unlimit.</td><td>2</td><td>2</td><td>1.81112</td><td>0</td><td>22.8500</td><td>4.9000</td><td>0</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<hr><div align="center"><h3>Distributions</h3></div>
+<table border="0" cellspacing="0" cellpadding="3" width="100%">
+<tr valign="top"><td><b><div align="left">Title</div></b></td><td><b><div align="left">(Re)set</div></b></td><td><b><div align="left">Obs</div></b></td><td><b><div align="left">Type</div></b></td><td><b><div align="left">Parameter 1</div></b></td><td><b><div align="left">Parameter 2</div></b></td><td><b><div align="left">Parameter 3</div></b></td><td><b><div align="left">Seed</div></b></td></tr>
+<tr valign="top"><td>ServiceTimeStream</td><td>0.0000</td><td>555</td><td>Cont Exponential</td><td>0.5</td><td> </td><td> </td><td>71529105</td></tr>
+<tr valign="top"><td>TruckArrivalTimeStream</td><td>0.0000</td><td>556</td><td>Cont Exponential</td><td>3.0</td><td> </td><td> </td><td>91080577</td></tr>
+</table><p></p>
+<font size="-1"><a href="#top">top</a></font><p></p>
+<font size="-2">created using <a href="http://www.desmoj.de">DESMO-J</A> Version 2.5.1c at Sun Apr 03 10:33:39 CEST 2016 - DESMO-J is licensed under <A HREF=http://www.apache.org/licenses/LICENSE-2.0>Apache License, Version 2.0</A></font>
+</body></html>
